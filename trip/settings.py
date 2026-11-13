@@ -26,12 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
-ALLOWED_HOSTS = [
-    'trips-to-memories-site.onrender.com',
-    'trips-to-memories-dcpjom781-payal-e1ea.vercel.app',
-    'localhost',
-    '127.0.0.1',
-]
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = [
     'https://trips-to-memories-site.onrender.com',
     'https://trips-to-memories-dcpjom781-payal-e1ea.vercel.app',
